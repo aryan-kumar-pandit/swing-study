@@ -2,6 +2,7 @@ package com.swing1;
 
 import java.awt.Color;
 import java.awt.Container;
+import java.awt.Font;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -19,8 +20,11 @@ public class JFrame1 {
 		Container c=frame.getContentPane();
 		c.setLayout(null);
 		JLabel label=new JLabel("username");// default value username will be passed
-		label.setBounds(100,50,100,30);
+		label.setBounds(100,50,200,30);
 		label.setText("Password");// changed text of label
+		
+		Font font=new Font("Arial",Font.ITALIC,30);
+		label.setFont(font);
 		c.add(label);
 		
 		
