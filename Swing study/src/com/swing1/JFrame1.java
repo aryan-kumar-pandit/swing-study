@@ -19,12 +19,9 @@ public class JFrame1 {
 		frame.setBounds(100, 100, 1000, 500);
 		Container c=frame.getContentPane();
 		c.setLayout(null);
-		JLabel label=new JLabel("username");// default value username will be passed
-		label.setBounds(100,50,200,30);
-		label.setText("Password");// changed text of label
-		
-		Font font=new Font("Arial",Font.ITALIC,30);
-		label.setFont(font);
+		ImageIcon icon= new ImageIcon("C:\\Users\\Aryan\\git\\swing-study\\Swing study\\src\\com\\swing1\\abc.jpg");
+		JLabel label=new JLabel(icon);
+		label.setBounds(100, 50, icon.getIconWidth(), icon.getIconHeight());
 		c.add(label);
 		
 		
