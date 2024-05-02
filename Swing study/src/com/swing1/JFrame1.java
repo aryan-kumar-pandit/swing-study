@@ -18,8 +18,9 @@ public class JFrame1 {
 		frame.setBounds(100, 100, 1000, 500);
 		Container c=frame.getContentPane();
 		c.setLayout(null);
-		JLabel label=new JLabel("username");
+		JLabel label=new JLabel("username");// default value username will be passed
 		label.setBounds(100,50,100,30);
+		label.setText("Password");// changed text of label
 		c.add(label);
 		
 		
