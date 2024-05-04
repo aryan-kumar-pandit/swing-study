@@ -3,14 +3,18 @@ package com.swing1;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JSplitPane;
-//splitpane not worked
-public class MyJSplitPane {
 
-	public static void main(String[] args) {
-		JFrame frame = new JFrame("Jsplit pane");
-		frame.setBounds(250, 250, 500, 500);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setLayout(null);
+public class MyJSplitPane extends JFrame {
+
+	MyJSplitPane()
+	{
+		
+		setTitle("Jsplit pane");
+		setBounds(250, 250, 500, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setVisible(true);
+		
 		JButton btn1=new JButton("LEFT");
 		JButton btn2=new JButton("RIGHT");
 		
@@ -20,9 +24,14 @@ public class MyJSplitPane {
 		splitPane.setDividerSize(10);
 		splitPane.setDividerLocation(100);
 		splitPane.setOneTouchExpandable(true);
-		frame.add(splitPane);
-		frame.validate();
-		frame.setVisible(true);
+		add(splitPane);
+		validate();
+		
+	}
+	
+	public static void main(String[] args) {
+		new MyJSplitPane();
+		
 
 	}
 
